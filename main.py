@@ -19,7 +19,6 @@ def crawl(url):
             if target_url in found_link and found_link not in foundLinks:
                 foundLinks.append(found_link)
                 print(found_link)
-                #recursive (fonksiyon içinde fonksiyon kullanımı)
                 crawl(found_link)
 
 crawl(target_url)
